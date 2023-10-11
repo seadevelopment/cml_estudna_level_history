@@ -7,14 +7,13 @@ a) Project foundation
 """
 import requests
 import json
-from datetime import date
 
 # ----------------------------------------------------------------------------
 # --- Configuration
 # ----------------------------------------------------------------------------
 
 # --- Configuration
-username = 'forez09@gmail.com'
+username = ''
 password = ''
 sn = ''   # Serial number of your eSTUDNA
 
@@ -143,14 +142,14 @@ def eStudna_GetWaterLevelHistory(username: str, password: str, serialNumber: str
     tb = ThingsBoard()
     tb.login(username, password)
     user_devices = tb.getDevicesByName(f"%{serialNumber}")
-    return tb.getDeviceTimeseries(user_devices[0]["id"]["id"], "ain1", frm, until)
+    return tb.getDeviceTimeseries(user_devices[0]["id"]["id"], "ain1", frm, until)["ain1"]
+
 
 # ----------------------------------------------------------------------------
 # --- Main code
 # ----------------------------------------------------------------------------
 #TODO: try the new function
 level = eStudna_GetWaterLevelHistory(username, password, sn, 1696848456, 1697194056)
-print(f"Output 1: {eStudna_SetOutput(username, password, sn, True, 'OUT1')}")
 print(f"Device: {sn}")
 print(f"Water level: {level}")
 
