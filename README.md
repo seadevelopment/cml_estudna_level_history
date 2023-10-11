@@ -1,4 +1,4 @@
-# Příklad na zjištění aktuální hodnoty hladiny vaší eStudny z CML 
+# Příklad na zjištění historie hodnot hladiny vaší eStudny z CML 
 
 Pro Python:
 - stáhněte si estudna.py
@@ -8,5 +8,5 @@ Pro Python:
 ```
 c:\> python estudna.py
 Device: SB821035
-Water level: 2.805
+<WIP>
 ```
