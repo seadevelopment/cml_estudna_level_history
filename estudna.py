@@ -149,8 +149,8 @@ def eStudna_GetWaterLevelHistory(username: str, password: str, serialNumber: str
 # --- Main code
 # ----------------------------------------------------------------------------
 #TODO: try the new function
-level = eStudna_GetWaterLevelHistory(username, password, sn, 1696848456, 1697194056)
+level = eStudna_GetWaterLevelHistory(username, password, sn, 0, 1697119019000)
 print(f"Device: {sn}")
-print(f"Water level: {level}")
+print(f"Water level history: {level}")
 
 # End of file
