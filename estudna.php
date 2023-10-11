@@ -163,7 +163,7 @@ function eStudna_GetWaterLevelHistory($user,$password,$serialNumber,$from,$until
 // ----------------------------------------------------------------------------
 // --- Main code
 // ----------------------------------------------------------------------------
-
+#TODO: try the new function
 try
 {
   $level = eStudna_GetWaterLevelHistory($user, $password, $sn, 1696848456, 1697194056);
