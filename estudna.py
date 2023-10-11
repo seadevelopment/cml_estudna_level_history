@@ -148,7 +148,7 @@ def eStudna_GetWaterLevelHistory(username: str, password: str, serialNumber: str
 # ----------------------------------------------------------------------------
 # --- Main code
 # ----------------------------------------------------------------------------
-
+#TODO: try the new function
 level = eStudna_GetWaterLevelHistory(username, password, sn, 1696848456, 1697194056)
 print(f"Output 1: {eStudna_SetOutput(username, password, sn, True, 'OUT1')}")
 print(f"Device: {sn}")
