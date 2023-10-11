@@ -8,5 +8,5 @@ Pro Python:
 ```
 c:\> python estudna.py
 Device: SB821035
-<WIP>
+Water level history: [{'ts': 1697032630318, 'value': '0.347'}, {'ts': 1697032510313, 'value': '0.347'}, {'ts': 1697032476600, 'value': '0.347'}]
 ```
